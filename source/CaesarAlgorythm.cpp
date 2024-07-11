@@ -95,7 +95,7 @@ void CaesarAlgorythm::decrypt(TextProcessor &localText)
         throw new runtime_error("Unable to open file for reading.");
     }
     typedef char*(*CaesarAlgorythmDecrypt)(const char*, const int);
-    void* handle = dlopen("./source/CAlib.so", RTLD_LAZY);
+    void* handle = dlopen("./source/libCAlib.so", RTLD_LAZY);
     if (!handle) {
         std::cerr << "Cannot open library: " << dlerror() << '\n';
         return;
