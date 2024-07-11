@@ -237,7 +237,7 @@ void TextProcessor::Copy(const size_t charsToCopy, Coordinates coords) {
 
 	// Copy the specified number of characters to the buffer
 	if (buffer_ != nullptr && text_[coords_.row] != nullptr && coords_.index < strlen(text_[coords_.row]) && charsToCopyHere <= sizeof(buffer_) && charsToCopyHere <= strlen(text_[coords_.row] + coords_.index)) {
-    memcpy(buffer_, text_[coords_.row] + coords_.index, charsToCopyHere);
+		memcpy(buffer_, text_[coords_.row] + coords_.index, charsToCopyHere);
 	}
 
 

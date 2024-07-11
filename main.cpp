@@ -44,7 +44,7 @@ int main()
 			// close the program
 		case 0:
 			{
-				std::cout << "Program has been closed successfully";
+				std::cout << "Program has been closed successfully\n";
 				return 0;
 			}
 			// append symbols to the end of string

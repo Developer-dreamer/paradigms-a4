@@ -7,7 +7,7 @@
 
 class CaesarAlgorythm {
 public:
-    explicit CaesarAlgorythm();
+    CaesarAlgorythm();
     void setOutPath(const char* fileName);
     void setKey(int key);
     void encrypt(TextProcessor &localText);
@@ -21,9 +21,9 @@ private:
     int rows_;
     int lineChars_;
 
-    const char* fileName_;
-
+    std::string outPath_;
     std::ifstream file_;
+
     void openFile_();
     void closeFile_();
 
