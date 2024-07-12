@@ -27,6 +27,9 @@ private:
     void openFile_();
     void closeFile_();
 
+    char* encryptText_(const char* string, int key);
+    char* decryptText_(const char* string, int key);
+
     void writeEncryptedToFile_();
     std::string readFromFile_();
 };
